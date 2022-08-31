@@ -5,6 +5,10 @@ body {
     font-family: 'Aboreto', cursive;
 }
 
+body * {
+    box-sizing: border-box;
+}
+
 .main-login {
     width: 100vw;
     height: 100vh;
@@ -24,7 +28,13 @@ body {
 }
 
 .left-login > h1 {
+    font-size: 3.5vw;
     color:#009688;
+}
+
+.left-login > img {
+    width:  38vw;
+
 }
 
 .right-login {
@@ -36,12 +46,12 @@ body {
 }
 
 .card-login {
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 30px 0px;
+    padding: 30px 15px;
     background: #80CBC4;
     border-radius: 20px;
     box-shadow: 0px 10px 50px #26A69A;
@@ -105,3 +115,32 @@ body {
 }
 
 
+@media only screen and (max-width: 950px){
+.card-login{
+    width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+     .main-login{
+        flex-direction: column;
+     }   
+     .left-login > h1{
+        display: none;
+     }
+     .left-login {
+        width: 100%;
+        height: auto;
+     }
+     .right-login {
+        width: 100%;
+        height: auto;
+     }
+
+     .left-login > img {
+        width: 40vh;
+     }
+     .card-login{
+        width: 90%;
+     }
+}
