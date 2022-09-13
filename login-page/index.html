@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <title>Login</title>
 </head>
 <body>
@@ -24,7 +28,14 @@
                     <label for="senha">Senha</label>
                     <input type="password" name="senha" placeholder="Senha">
                 </div>
-                <button class="btn-login">Login</button>
+                <button class="btn-login" onclick="LogadoMesssage()">Login</button>
+                <script>
+                    function LogadoMesssage() {
+                    const showMessage = document.getElementsByClassName("btn-login");
+                    showMessage.innerHTML = 'Usuário não registrado';
+                    showMessage.style.display = 'block';
+                }
+                </script>
                 <a href="#" id="reset-password">Esqueceu a senha?</a>
                 <a href="#" id="goto-signup">Não é cadastrado?</a> 
             </div>
