@@ -27,9 +27,10 @@ body * {
     flex-direction: column;
 }
 
-.left-login > h1 {
-    font-size: 3.5vw;
+.left-login > a{
+    font-size: 1.7vw;
     color:#009688;
+    text-decoration: none;
 }
 
 .left-login > img {
