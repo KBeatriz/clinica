@@ -9,7 +9,7 @@ body * {
     box-sizing: border-box;
 }
 
-.menu-bar> ul > li > a{
+.menu> ul > li > a{
     color: #1db6ab;
     text-decoration: none;
 }
