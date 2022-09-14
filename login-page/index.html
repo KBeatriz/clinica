@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
     <title>Login</title>
 </head>
+
 <body>
     <div class="main-login">
         <div class="left-login">
-            <a href="..\home\home.html"><h1>Ressignificar</h1></a>
-            <img src="doutor.svg" alt=""Doutor animação">                       
+            <a href="..\home\home.html">
+                <h1>Ressignificar</h1>
+            </a>
+            <img src="./img/doutor.svg" alt="" Doutor animação">
         </div>
         <div class="right-login">
             <div class="card-login">
                 <h1>LOGIN</h1>
                 <div class="textfield">
-                    <label for="usuario">Usuário</label>
-                    <input class="usuario" type="text" name="usuario" placeholder="Usuário">
+                    <label for="usuario">E-mail</label>
+                    <input class="usuario" type="text" name="usuario" placeholder="E-mail">
                 </div>
                 <div class="textfield">
                     <label for="senha">Senha</label>
@@ -30,9 +34,9 @@
                         const user = document.querySelector(".usuario").value;
                         const pass = document.querySelector(".senha").value;
                         if (user === 'bia' && pass === '123') {
-                            window.open("../home/home.html", "_self")
+                            window.open("", "_self")
                         } else {
-                            alert('Usuário não registrado');
+                            alert('Usuário Inválido');
                         }
                     }
                   //  function LogadoMesssage() {
@@ -41,9 +45,10 @@
                //}
                 //</script>
                 <a href="#" id="reset-password">Esqueceu a senha?<br></a>
-                <a href="#" id="goto-signup">Não é cadastrado?</a> 
+                <a href="../registrar-page/registrar.html" id="goto-signup">Não é cadastrado?</a>
             </div>
         </div>
     </div>
 </body>
+
 </html>

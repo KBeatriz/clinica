@@ -1,30 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Josefin+Sans:wght@300&display=swap');
 
 body {
-    margin: 0;
-    font-family: 'Aboreto', cursive;
+  margin: 0;
+  font-family: 'Aboreto', cursive;
 }
 
 body * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .main-login {
-    width: 100vw;
-    height: 100vh;
-    background: #F0FFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #f0ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .left-login {
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .left-login > a{
@@ -34,28 +34,27 @@ body * {
 }
 
 .left-login > img {
-    width:  38vw;
-
+  width: 38vw;
 }
 
 .right-login {
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-login {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px 15px;
-    background: #80CBC4;
-    border-radius: 20px;
-    box-shadow: 0px 10px 50px #26A69A;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 15px;
+  background: #80cbc4;
+  border-radius: 20px;
+  box-shadow: 0px 10px 50px #26a69a;
 }
 
 .card-login > h1 {
@@ -66,27 +65,27 @@ body * {
 
 /*justify-content refere-se ao eixo x; align-itens refere-se ao eixo y*/
 /* entretanto, ao usar o flex-direction isso se inverte*/
-.textfield{
-    width: 100%;    
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 10px 15px;
+.textfield {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 15px;
 }
 
-.textfield > input{
-    width: 100%;
-    border: none;
-    border-radius: 10px;
-    padding: 15px; /* apenas um valor serve para o eixo x e y*/
-    background: #F0FFFF;
-    color: #455A64;
-    font-size: 14pt;
-    box-shadow: 0px 5px 60px #26A69A;
-    outline: none;
-    box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
+.textfield > input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px; /* apenas um valor serve para o eixo x e y*/
+  background: #f0ffff;
+  color: #455a64;
+  font-size: 14pt;
+  box-shadow: 0px 5px 60px #26a69a;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .textfield > label {
@@ -94,12 +93,17 @@ body * {
     margin-bottom: 10px;
 }
 
-.textfield > input ::placeholder{
-    color: 	#ADD8E6;
+.textfield > input ::placeholder {
+  color: #add8e6;
 }
 
-.card-login > a{
-    color:white;
+.card-login > a {
+  text-decoration: none;
+  color: white;
+}
+
+#reset-password {
+  margin-bottom: 10px;
 }
 
 .btn-login {
@@ -119,32 +123,32 @@ body * {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-@media only screen and (max-width: 950px){
-.card-login{
+@media only screen and (max-width: 950px) {
+  .card-login {
     width: 85%;
-    }
+  }
 }
 
-@media only screen and (max-width: 600px){
-     .main-login{
-        flex-direction: column;
-     }   
-     .left-login > h1{
-        display: none;
-     }
-     .left-login {
-        width: 100%;
-        height: auto;
-     }
-     .right-login {
-        width: 100%;
-        height: auto;
-     }
+@media only screen and (max-width: 600px) {
+  .main-login {
+    flex-direction: column;
+  }
+  .left-login > h1 {
+    display: none;
+  }
+  .left-login {
+    width: 100%;
+    height: auto;
+  }
+  .right-login {
+    width: 100%;
+    height: auto;
+  }
 
-     .left-login > img {
-        width: 40vh;
-     }
-     .card-login{
-        width: 90%;
-     }
+  .left-login > img {
+    width: 40vh;
+  }
+  .card-login {
+    width: 90%;
+  }
 }
