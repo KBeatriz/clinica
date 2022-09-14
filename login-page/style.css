@@ -29,7 +29,7 @@ body * {
 
 .left-login > a{
     font-size: 1.7vw;
-    color:#009688;
+    color:#1db6ab;
     text-decoration: none;
 }
 
@@ -59,7 +59,7 @@ body * {
 }
 
 .card-login > h1 {
-    color:#009688;
+    color:#1db6ab;
     font-weight: 800;
     margin: 0;
 }
@@ -90,7 +90,7 @@ body * {
 }
 
 .textfield > label {
-    color: #455A64;
+    color: white;
     margin-bottom: 10px;
 }
 
@@ -112,7 +112,7 @@ body * {
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 3px;
-    color:#009688;
+    color:#1db6ab;
     background:#E0F2F1;
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #26A69A;

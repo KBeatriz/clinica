@@ -1,3 +1,19 @@
-.href{
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Josefin+Sans:wght@300&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Aboreto', cursive;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.menu-bar> ul > li > a{
+    color: #1db6ab;
     text-decoration: none;
+}
+
+.menu-bar> ul {
+    list-style: none;
 }
