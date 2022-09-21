@@ -58,7 +58,7 @@ body * {
 }
 
 .card-login > h1 {
-  color: #1db6ab;
+  color:#e3fffd;
   font-weight: 800;
   margin: 0;
 }
@@ -102,6 +102,11 @@ body * {
   color: white;
 }
 
+.card-login > p{
+  padding: 0;
+  margin: 0;
+}
+
 .card-login > p > a {
   text-decoration: none;
   color: white;
@@ -110,24 +115,24 @@ body * {
 .emptyfield {
   opacity: 0;
   margin: 0px;
-  margin-top: 10px;
 }
 
 .ativado {
   opacity: 1;
   margin: 0px;
   margin-top: 10px;
-  color: #ff4d4f;
+  font-weight: 550;
+  color: #a00407;
 }
 
 #reset-password {
   margin-bottom: 10px;
 }
 
-.btn-login {
+.btn-register {
   width: 100%;
-  padding: 16px 0px;
-  margin: 25px;
+  padding: 12px 0px;
+  margin: 10px;
   border: none;
   border-radius: 8px;
   outline: none;
