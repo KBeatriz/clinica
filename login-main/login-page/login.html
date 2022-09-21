@@ -12,10 +12,10 @@
 <body>
     <div class="main-login">
         <div class="left-login">
-            <a href="..\index.html">
+            <a href="../../index.html">
                 <h1>Ressignificar</h1>
             </a>
-            <img src="doutor.svg" alt="" Doutor animação">
+            <img src="../img/doutor.svg" alt="" Doutor animação">
         </div>
         <div class="right-login">
             <div class="card-login">
@@ -26,26 +26,35 @@
                 </div>
                 <div class="textfield">
                     <label for="senha">Senha</label>
-                    <input class="senha" type="password" name="senha" placeholder="Senha">
+                    <input class="senha" type="password" name="senha" placeholder="Senha" on>
                 </div>
                 <button class="btn-login" onclick="LogadoMesssage()">Login</button>
                 <script>
                     function LogadoMesssage() {
                         const user = document.querySelector(".usuario").value;
                         const pass = document.querySelector(".senha").value;
-                        if (user === 'bia' && pass === '123') {
+                        if (user === 'bia@bia.com' && pass === '123') {
                             window.open("", "_self")
                         } else {
                             alert('Usuário Inválido');
                         }
                     }
-                  //  function LogadoMesssage() {
-                   // const showMessage = document.getElementsByClassName(".btn-login");
-                 //  alert('Usuário não registrado');
-               //}
-                //</script>
-                <a href="#" id="reset-password">Esqueceu a senha?<br></a>
-                <a href="../registrar-page/registrar.html" id="goto-signup">Não é cadastrado?</a>
+
+                    const input = document.querySelectorAll('input');
+                    input.forEach((item) => {
+                        item.addEventListener("keyup", function (event) {
+                            if (event.key === "Enter") {
+                                LogadoMesssage()
+                            }
+                        });
+                    })
+
+
+
+
+                </script>
+                <a href="../reset-password/reset.html" id="reset-password">Esqueceu a senha?<br></a>
+                <a href="../registrar-page/register.html" id="goto-signup">Não é cadastrado?</a>
             </div>
         </div>
     </div>

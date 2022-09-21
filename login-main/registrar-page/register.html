@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./script.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <title>Registrar</title>
+</head>
+
+<body>
+  <div class="main-login">
+    <div class="left-login">
+      <a href="../../index.html">
+        <h1>Ressignificar</h1>
+      </a>
+      <img src="../img/doutor.svg" alt="" Doutor animação">
+    </div>
+    <div class="right-login">
+      <div class="card-login">
+        <h1>CADASTRO</h1>
+        <div class="textfield">
+          <label for="usuario">Nome *</label>
+          <input id="nome_cad" name="nome_cad" required="required" class="default" type="text" placeholder="Nome" />
+        </div>
+        <div class="textfield">
+          <label for="usuario">E-mail *</label>
+          <input id="email_cad" name="email_cad" required="required" class="default" type="email" placeholder="E-mail" />
+        </div>
+        <div class="textfield">
+          <label for="senha">Senha *</label>
+          <input id="senha_cad" name="senha_cad" required="required" class="default" type="password" placeholder="Senha">
+        </div>
+        <p class="emptyfield">* Campos Obrigatórios</p>
+        <button class="btn-login" onclick="checkFields()">Cadastrar</button>
+        <p><a href="../login-page/login.html"> Voltar para Login </a>
+        </p>
+        <script>
+          const input = document.querySelectorAll('input');
+          input.forEach((item) => {
+            item.addEventListener('keyup', function (event) {
+              if (event.key === 'Enter') {
+                checkFields();
+              }
+            });
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
