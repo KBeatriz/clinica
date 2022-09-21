@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <a href="../../index.html">
+                <h1>Ressignificar</h1>
+            </a>
+            <img src="../img/doutor.svg" alt="" Doutor animação">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>Esqueci minha senha</h1>
+                <p>Para recuperar seu acesso, precisamos do seu E-mail</p>
+                <div class="textfield">
+                    <label for="usuario">E-mail</label>
+                    <input class="usuario" type="text" name="usuario" placeholder="E-mail">
+                </div>
+                <button class="btn-login" onclick="sendEmail()">Enviar</button>
+                <script>
+                    function sendEmail() {
+                        const selector = document.querySelector('.usuario').value
+                        if (selector !== "") {
+                            alert('E-mail enviado com sucesso')
+                            window.open('../login-page/login.html', 'self')
+                        } else {
+                            alert('Favor preencher os dados necessários')
+                        }
+                    }
+
+                    const input = document.querySelector('input');
+                    input.addEventListener("keyup", function (event) {
+                        if (event.key === "Enter") {
+                            sendEmail()
+                        }
+                    });
+
+                </script>
+                <a href="../login-page/login.html"> Voltar para Login </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
