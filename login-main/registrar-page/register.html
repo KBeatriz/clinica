@@ -35,9 +35,18 @@
         </div>
         <p class="emptyfield">* Campos Obrigatórios</p>
         <button class="btn-login" onclick="checkFields()">Cadastrar</button>
-        <p>Já tem conta?
-          <a href="../login-page/login.html"> Ir para Login </a>
+        <p><a href="../login-page/login.html"> Voltar para Login </a>
         </p>
+        <script>
+          const input = document.querySelectorAll('input');
+          input.forEach((item) => {
+            item.addEventListener('keyup', function (event) {
+              if (event.key === 'Enter') {
+                checkFields();
+              }
+            });
+          });
+        </script>
       </div>
     </div>
   </div>

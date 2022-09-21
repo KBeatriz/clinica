@@ -4,13 +4,13 @@ function checkFields() {
   const email = document.querySelector('#email_cad').value;
   const pass = document.querySelector('#senha_cad').value;
   const check = checkEmail(email);
-  if (name === '' && email === '' && pass === '') {
+  if (name === '' || email === '' || pass === '') {
     dom.classList.add('ativado');
   } else if (check !== true) {
     alert('E-mail Inválido');
   } else {
     alert('Cadastrado com sucesso');
-    window.open('../login-page/login.html');
+    window.open('../login-page/login.html', '_self');
   }
 }
 
