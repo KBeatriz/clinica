@@ -13,8 +13,30 @@ body * {
     box-sizing: border-box;
 }
 
+/* Change the color of links on hover */
 .menu>ul>li>a {
     list-style: none;
     color: #1db6ab;
     text-decoration: none;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
 }
+
+.menu>ul>li>a:hover {
+    color: black;
+  }
+
+header {
+    flex-direction: row;
+    background-color: azure ;
+    overflow: hidden;
+}
+
+footer {
+    flex-direction: row;
+    background-color: azure ;
+    
+
+}
+
